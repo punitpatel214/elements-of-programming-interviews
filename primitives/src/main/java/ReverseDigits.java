@@ -5,7 +5,12 @@ public class ReverseDigits {
     */
 
     public static long reverse(int x) {
-
-        return 0;
+        int absValue = Math.abs(x);
+        int result = 0;
+        while (absValue > 0) {
+            result = (result * 10) + (absValue % 10);
+            absValue /= 10;
+        }
+        return x > 0 ? result : -result;
     }
 }

@@ -17,6 +17,7 @@ public class ReverseBitsTest {
 
     private void test(int expected, int input) {
         assertEquals(expected, ReverseBits.reverse(input));
+        assertEquals(expected, ReverseBits.reverseNew(input));
     }
 
 }

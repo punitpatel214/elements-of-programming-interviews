@@ -39,6 +39,13 @@ public class CheckIfIntegerIsPalindromeTest {
         test(expected, input);
     }
 
+    @Test
+    public void isPalindrome6() {
+        expected = true;
+        input = 5134315;
+        test(expected, input);
+    }
+
 
     private void test(boolean expected, int input) {
         assertEquals(expected, CheckIfIntegerIsPalindrome.isPalindrome(input));
